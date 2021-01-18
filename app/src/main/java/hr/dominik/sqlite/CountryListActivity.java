@@ -46,7 +46,7 @@ public class CountryListActivity extends AppCompatActivity {
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+            public void onItemClick(AdapterView<?> parent, View view, int position, long viewId) {
                 TextView idTextView = view.findViewById(R.id.id);
                 TextView titleTextView = view.findViewById(R.id.title);
                 TextView descTextView = view.findViewById(R.id.desc);
@@ -78,6 +78,6 @@ public class CountryListActivity extends AppCompatActivity {
             Intent add_mem = new Intent(this,AddCountryActivity.class);
             startActivity(add_mem);
         }
-        return super.onOptionsItemSelected(item)
+        return super.onOptionsItemSelected(item);
     }
 }
