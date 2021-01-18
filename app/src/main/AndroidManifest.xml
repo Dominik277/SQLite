@@ -8,6 +8,8 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.SQLite"></application>
+        android:theme="@style/Theme.SQLite">
+        <activity android:name=".AddCountryActivity"></activity>
+    </application>
 
 </manifest>
